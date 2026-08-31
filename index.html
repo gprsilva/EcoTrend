@@ -1,11 +1,271 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>EcoTrend</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EcoTrend — Consumo consciente, escolhas que transformam</title>
+  <meta name="description" content="EcoTrend: produtos sustentáveis de moda, beleza, casa e tecnologia para um estilo de vida mais consciente.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    
+  <!-- ====================== HEADER ====================== -->
+  <header id="site-header" class="site-header">
+    <nav class="navbar navbar-expand-lg" aria-label="Navegação principal">
+      <div class="container header-inner">
+
+        <a class="brand" href="#">
+          <i class="fa-solid fa-leaf brand-icon" aria-hidden="true"></i>
+          <span class="brand-name">EcoTrend</span>
+        </a>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Abrir menu">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="mainNav">
+          <ul class="navbar-nav main-nav mx-lg-auto">
+            <li class="nav-item"><a class="nav-link" aria-current="page" href="#hero">Início</a></li>
+            <li class="nav-item"><a class="nav-link" href="#categorias">Categorias</a></li>
+            <li class="nav-item"><a class="nav-link" href="#destaques">Ofertas</a></li>
+            <li class="nav-item"><a class="nav-link" href="#por-que">Sobre nós</a></li>
+            <li class="nav-item"><a class="nav-link" href="#rodape">Contato</a></li>
+          </ul>
+
+          <div class="header-actions">
+            <form class="search-form d-none d-lg-flex" role="search" aria-label="Buscar produtos">
+              <label for="search-input" class="visually-hidden">Buscar</label>
+              <input id="search-input" class="search-input" type="search" placeholder="Buscar produtos" aria-label="Buscar produtos">
+              <button class="icon-btn" type="submit" aria-label="Buscar">
+                <i class="fa-solid fa-magnifying-glass" aria-hidden="true"></i>
+              </button>
+            </form>
+
+            <button class="icon-btn d-lg-none" type="button" aria-label="Buscar">
+              <i class="fa-solid fa-magnifying-glass" aria-hidden="true"></i>
+            </button>
+            <button class="icon-btn" type="button" aria-label="Minha conta">
+              <i class="fa-regular fa-user" aria-hidden="true"></i>
+            </button>
+            <button class="icon-btn cart-btn" type="button" aria-label="Carrinho, 0 itens">
+              <i class="fa-solid fa-bag-shopping" aria-hidden="true"></i>
+              <span class="cart-count" id="cart-count">0</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main-content">
+
+    <!-- ====================== HERO / CAROUSEL ====================== -->
+    <section id="hero" class="hero" aria-label="Destaques">
+      <div id="heroCarousel" class="carousel slide hero-carousel" data-bs-ride="carousel" data-bs-interval="6000">
+
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+
+        <div class="carousel-inner">
+
+          <div class="carousel-item active">
+            <img src="midia/imgs/carro1.png" class="d-block w-100 brand-photo" alt="Composição de produtos sustentáveis EcoTrend sobre mesa de madeira clara">
+            <div class="hero-overlay"></div>
+            <div class="container hero-caption-wrap">
+              <div class="hero-caption">
+                <p class="hero-eyebrow">EcoTrend</p>
+                <h1 class="hero-title">Consuma melhor.<br>Viva consciente.</h1>
+                <p class="hero-text">Produtos que combinam estilo, inovação e escolhas mais conscientes.</p>
+                <a href="#destaques" class="btn btn-cta">Explorar produtos</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <img src="midia/imgs/carro2.png" class="d-block w-100 brand-photo" alt="Roupas e acessórios sustentáveis dispostos em composição editorial">
+            <div class="hero-overlay"></div>
+            <div class="container hero-caption-wrap">
+              <div class="hero-caption">
+                <p class="hero-eyebrow">Moda sustentável</p>
+                <h1 class="hero-title">Estilo que respeita<br>o futuro.</h1>
+                <p class="hero-text">Descubra roupas e acessórios pensados para uma escolha mais consciente.</p>
+                <a href="#categorias" class="btn btn-cta">Ver coleção de moda</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <img src="midia/imgs/carro3.png" class="d-block w-100 brand-photo" alt="Dispositivos de tecnologia verde sobre superfície natural">
+            <div class="hero-overlay"></div>
+            <div class="container hero-caption-wrap">
+              <div class="hero-caption">
+                <p class="hero-eyebrow">Tecnologia verde</p>
+                <h1 class="hero-title">Tecnologia para um<br>futuro melhor.</h1>
+                <p class="hero-text">Encontre soluções inteligentes que ajudam a transformar seus hábitos.</p>
+                <a href="#categorias" class="btn btn-cta">Descobrir tecnologia</a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
+          <span class="control-icon" aria-hidden="true"><i class="fa-solid fa-chevron-left"></i></span>
+          <span class="visually-hidden">Anterior</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
+          <span class="control-icon" aria-hidden="true"><i class="fa-solid fa-chevron-right"></i></span>
+          <span class="visually-hidden">Próximo</span>
+        </button>
+      </div>
+    </section>
+
+    <!-- ====================== CATEGORIAS ====================== -->
+    <section id="categorias" class="section categories-section">
+      <div class="container">
+        <div class="section-head">
+          <h2 class="section-title">Escolha por categoria</h2>
+          <p class="section-subtitle">Quatro frentes, um mesmo compromisso: consumir com propósito.</p>
+        </div>
+
+        <div class="category-grid">
+
+          <article class="category-card">
+            <div class="category-icon"><i class="fa-solid fa-shirt" aria-hidden="true"></i></div>
+            <h3 class="category-name">Moda</h3>
+            <p class="category-desc">Roupas e acessórios sustentáveis.</p>
+            <a href="#destaques" class="category-link">Explorar <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
+          </article>
+
+          <article class="category-card">
+            <div class="category-icon"><i class="fa-solid fa-spa" aria-hidden="true"></i></div>
+            <h3 class="category-name">Beleza</h3>
+            <p class="category-desc">Produtos naturais para cuidados pessoais.</p>
+            <a href="#destaques" class="category-link">Explorar <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
+          </article>
+
+          <article class="category-card">
+            <div class="category-icon"><i class="fa-solid fa-house" aria-hidden="true"></i></div>
+            <h3 class="category-name">Casa</h3>
+            <p class="category-desc">Produtos sustentáveis para o dia a dia.</p>
+            <a href="#destaques" class="category-link">Explorar <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
+          </article>
+
+          <article class="category-card">
+            <div class="category-icon"><i class="fa-solid fa-microchip" aria-hidden="true"></i></div>
+            <h3 class="category-name">Tecnologia</h3>
+            <p class="category-desc">Tecnologias e produtos com foco sustentável.</p>
+            <a href="#destaques" class="category-link">Explorar <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ====================== POR QUE ECOTREND ====================== -->
+    <section id="por-que" class="section why-section">
+      <div class="container">
+        <div class="section-head">
+          <h2 class="section-title">Por que EcoTrend?</h2>
+        </div>
+
+        <div class="why-grid">
+
+          <article class="why-card">
+            <div class="why-icon"><i class="fa-solid fa-seedling" aria-hidden="true"></i></div>
+            <h3 class="why-title">Escolhas conscientes</h3>
+            <p class="why-desc">Produtos selecionados pensando no impacto ambiental.</p>
+          </article>
+
+          <article class="why-card">
+            <div class="why-icon"><i class="fa-solid fa-award" aria-hidden="true"></i></div>
+            <h3 class="why-title">Qualidade</h3>
+            <p class="why-desc">Produtos pensados para fazer parte da sua rotina.</p>
+          </article>
+
+          <article class="why-card">
+            <div class="why-icon"><i class="fa-solid fa-layer-group" aria-hidden="true"></i></div>
+            <h3 class="why-title">Variedade</h3>
+            <p class="why-desc">Moda, beleza, casa e tecnologia em um só lugar.</p>
+          </article>
+
+          <article class="why-card">
+            <div class="why-icon"><i class="fa-solid fa-leaf" aria-hidden="true"></i></div>
+            <h3 class="why-title">Futuro</h3>
+            <p class="why-desc">Incentivo a hábitos mais sustentáveis.</p>
+          </article>
+
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ====================== FOOTER ====================== -->
+  <footer id="rodape" class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+
+        <div class="footer-col footer-brand">
+          <a class="brand brand-footer" href="#">
+            <i class="fa-solid fa-leaf brand-icon" aria-hidden="true"></i>
+            <span class="brand-name">EcoTrend</span>
+          </a>
+          <p class="footer-desc">Produtos sustentáveis de moda, beleza, casa e tecnologia para um estilo de vida mais consciente.</p>
+          <div class="social-links">
+            <a href="#" class="social-link" aria-label="Instagram"><i class="fa-brands fa-instagram" aria-hidden="true"></i></a>
+            <a href="#" class="social-link" aria-label="Facebook"><i class="fa-brands fa-facebook-f" aria-hidden="true"></i></a>
+            <a href="#" class="social-link" aria-label="X (Twitter)"><i class="fa-brands fa-x-twitter" aria-hidden="true"></i></a>
+            <a href="#" class="social-link" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in" aria-hidden="true"></i></a>
+          </div>
+        </div>
+
+        <nav class="footer-col" aria-label="Navegação">
+          <h3 class="footer-heading">Navegação</h3>
+          <ul class="footer-list">
+            <li><a href="#hero">Início</a></li>
+            <li><a href="#categorias">Categorias</a></li>
+            <li><a href="#destaques">Ofertas</a></li>
+            <li><a href="#por-que">Sobre nós</a></li>
+            <li><a href="#rodape">Contato</a></li>
+          </ul>
+        </nav>
+
+        <nav class="footer-col" aria-label="Atendimento">
+          <h3 class="footer-heading">Atendimento</h3>
+          <ul class="footer-list">
+            <li><a href="#">Central de ajuda</a></li>
+            <li><a href="#">Trocas e devoluções</a></li>
+            <li><a href="#">Política de privacidade</a></li>
+            <li><a href="#">Termos de uso</a></li>
+          </ul>
+        </nav>
+
+        <div class="footer-col footer-newsletter">
+          <h3 class="footer-heading">Receba novidades</h3>
+          <p class="footer-desc">Novidades e lançamentos, direto na sua caixa de entrada.</p>
+          <form class="newsletter-form">
+            <label for="newsletter-email" class="visually-hidden">Seu e-mail</label>
+            <input id="newsletter-email" type="email" class="newsletter-input" placeholder="Seu e-mail" required>
+            <button type="submit" class="btn btn-cta newsletter-btn">Assinar</button>
+          </form>
+        </div>
+
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 EcoTrend. Todos os direitos reservados.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+  <script src="js/script.js"></script>
 </body>
 </html>
