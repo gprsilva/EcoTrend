@@ -20,6 +20,10 @@
 </head>
 
 <body>
+<<<<<<< HEAD
+=======
+    <a class="skip-link" href="#main-content">Pular para o conteúdo</a>
+>>>>>>> features/Leal
     <!-- HEADER -->
     <header id="site-header" class="site-header">
         <nav class="navbar navbar-expand-lg" aria-label="Navegação principal">
@@ -39,6 +43,7 @@
                     <ul class="navbar-nav main-nav mx-lg-auto">
                         <li class="nav-item"><a class="nav-link" href="../index.html">Início</a></li>
                         <li class="nav-item"><a class="nav-link" href="categoria.html">Categorias</a></li>
+<<<<<<< HEAD
                         <li class="nav-item"><a class="nav-link" href="../index.html#destaques">Ofertas</a></li>
                         <li class="nav-item"><a class="nav-link" href="../index.html#por-que">Sobre nós</a></li>
                         <li class="nav-item"><a class="nav-link active" aria-current="page"
@@ -47,6 +52,17 @@
 
                     <div class="header-actions">
                         <form class="search-form d-none d-lg-flex" role="search" aria-label="Buscar produtos">
+=======
+                        <li class="nav-item"><a class="nav-link" href="categoria.html?categoria=ofertas">Ofertas</a></li>
+                        <li class="nav-item"><a class="nav-link" href="../index.html#por-que">Sobre nós</a></li>
+                        <li class="nav-item"><a class="nav-link active" aria-current="page"
+                                href="contatos.html">Contato</a></li>
+                    </ul>
+
+                    <div class="header-actions">
+                        <form id="header-search-form" class="search-form d-none d-lg-flex" role="search"
+                            aria-label="Buscar produtos">
+>>>>>>> features/Leal
                             <label for="search-input" class="visually-hidden">Buscar</label>
                             <input id="search-input" class="search-input" type="search" placeholder="Buscar produtos"
                                 aria-label="Buscar produtos">
@@ -55,13 +71,23 @@
                             </button>
                         </form>
 
+<<<<<<< HEAD
                         <button class="icon-btn d-lg-none" type="button" aria-label="Buscar">
+=======
+                        <button id="mobile-search-toggle" class="icon-btn d-lg-none" type="button"
+                            aria-label="Buscar" aria-expanded="false" aria-controls="header-search-form">
+>>>>>>> features/Leal
                             <i class="fa-solid fa-magnifying-glass" aria-hidden="true"></i>
                         </button>
                         <button class="icon-btn" type="button" aria-label="Minha conta">
                             <i class="fa-regular fa-user" aria-hidden="true"></i>
                         </button>
+<<<<<<< HEAD
                         <button class="icon-btn cart-btn" type="button" aria-label="Carrinho, 0 itens">
+=======
+                        <button class="icon-btn cart-btn" type="button" aria-label="Carrinho, 0 itens"
+                            data-bs-toggle="offcanvas" data-bs-target="#carrinho-offcanvas" aria-controls="carrinho-offcanvas">
+>>>>>>> features/Leal
                             <i class="fa-solid fa-bag-shopping" aria-hidden="true"></i>
                             <span class="cart-count" id="cart-count">0</span>
                         </button>
@@ -131,7 +157,11 @@
 
                     <!-- Formulário -->
                     <div class="col-12 col-lg-7">
+<<<<<<< HEAD
                         <form>
+=======
+                        <form id="contact-form">
+>>>>>>> features/Leal
                             <div class="row g-3">
                                 <div class="col-12 col-md-6">
                                     <label for="nome" class="form-label">Nome</label>
@@ -206,9 +236,15 @@
                     <ul class="footer-list">
                         <li><a href="../index.html">Início</a></li>
                         <li><a href="categoria.html">Categorias</a></li>
+<<<<<<< HEAD
                         <li><a href="../index.html#destaques">Ofertas</a></li>
                         <li><a href="../index.html#por-que">Sobre nós</a></li>
                         <li><a href="contato.html">Contato</a></li>
+=======
+                        <li><a href="categoria.html?categoria=ofertas">Ofertas</a></li>
+                        <li><a href="../index.html#por-que">Sobre nós</a></li>
+                        <li><a href="contatos.html">Contato</a></li>
+>>>>>>> features/Leal
                     </ul>
                 </nav>
 
@@ -241,9 +277,37 @@
         </div>
     </footer>
 
+<<<<<<< HEAD
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
         crossorigin="anonymous"></script>
+=======
+    <!-- ====================== CARRINHO (OFFCANVAS) ====================== -->
+    <div class="offcanvas offcanvas-end cart-offcanvas" tabindex="-1" id="carrinho-offcanvas"
+        aria-labelledby="carrinho-offcanvas-label">
+        <div class="offcanvas-header">
+            <h2 class="offcanvas-title" id="carrinho-offcanvas-label">Meu carrinho</h2>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Fechar carrinho"></button>
+        </div>
+        <div class="offcanvas-body d-flex flex-column">
+            <div id="carrinho-lista" class="cart-list"></div>
+            <p id="carrinho-vazio" class="text-secondary text-center my-4">
+                Seu carrinho está vazio.
+            </p>
+            <div class="cart-summary mt-auto pt-3 border-top">
+                <div class="d-flex justify-content-between align-items-center fw-bold fs-5">
+                    <span>Subtotal</span>
+                    <span id="carrinho-subtotal">R$ 0,00</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+    <script src="../js/script.js"></script>
+>>>>>>> features/Leal
 </body>
 
 </html>
